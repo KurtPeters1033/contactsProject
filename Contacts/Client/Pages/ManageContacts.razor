@@ -1,0 +1,97 @@
+﻿@page "/managecontacts"
+@using Contacts.Client.Model;
+
+<h2 class="d-flex justify-content-center" style="font-Family: monospace">Contact Listing</h2>
+
+<div>
+    <div class="d-flex flex-row">
+        <MudButton Class="m-3" Variant="Variant.Filled" StartIcon="@Icons.Filled.PersonAddAlt1" Color="Color.Primary" OnClick="@OnAdd" >Add Contact</MudButton>
+        <MudTextField Style="width: calc(100% + 50px)" @ref="mudTextFieldRef" @bind-Value="searchText" Label="Search" Variant="Variant.Outlined" />
+        <MudIconButton Icon="@Icons.Filled.Search" OnClick="@OnSearch"></MudIconButton>
+        <MudIconButton Color="Color.Primary" Icon="@Icons.Filled.FilterAlt" OnClick="@ToggleOpenFilter" />
+        <MudPopover Open="@isFilterOpen" AnchorOrigin="Origin.BottomRight" Class="d-flex flex-column">
+            <div class="m-3">
+                <h6 class="d-flex justify-content-center">
+                    <b>Sort By</b>
+                </h6>
+                <div class="d-flex flex-column">
+                    <MudSwitch ReadOnly=@sortByName T="bool" Checked="@sortByName" Color="Color.Primary" CheckedChanged="@((value) => OnSortByNameToggled(value))">
+                        Name
+                    </MudSwitch>
+                    <MudSwitch ReadOnly=@sortByLocation T="bool" Checked="@sortByLocation" Color="Color.Primary" CheckedChanged="@((value) => OnSortByLocationToggled(value))">
+                        Location
+                    </MudSwitch>
+                    <MudSwitch ReadOnly=@sortByPosition T="bool" Checked="@sortByPosition" Color="Color.Primary" CheckedChanged="@((value) => OnSortByPositionToggled(value))">
+                        Position
+                    </MudSwitch>
+                </div>
+            </div>
+        </MudPopover>
+        <ContactPopover IsDetailDialogOpen=@isDetailDialogOpen SelectedContact="@SelectedContact" FlagData="@FlagData" Mode="@contactDetailMode" />
+    </div>
+    <div>
+        <MudList Clickable="true" @bind-SelectedValue="selectedValue" @bind-SelectedItem="selectedItem" Color="Color.Primary">
+            @{
+                @if (FilteredContactData != null && FilteredContactData.Any())
+                {
+                    @foreach (var person in FilteredContactData)
+                    {
+                        <MudListItem Value="person" OnClick="@OnSelectedValueChanged">
+                            <MudCard>
+                                <MudCardHeader Class="pt-3 pb-0">
+                                    <CardHeaderContent>
+                                        <div class="d-flex">
+                                            @if (person.office == "New York" || person.office == "San Francisco")
+                                            {
+                                                <MudImage Width=30 Src=@FlagData.Where(x => x.name == "United States").Select(x => x.image).First() />
+                                            }
+                                            @if (person.office == "Tokyo")
+                                            {
+                                                <MudImage Width=30 Src=@FlagData.Where(x => x.name == "Japan").Select(x => x.image).First() />
+                                            }
+                                            @if (person.office == "Sydney")
+                                            {
+                                                <MudImage Width=30 Src=@FlagData.Where(x => x.name == "Australia").Select(x => x.image).First() />
+                                            }
+                                            @if (person.office == "Edinburgh")
+                                            {
+                                                <MudImage Width=30 Src=@FlagData.Where(x => x.name == "Scotland").Select(x => x.image).First() />
+                                            }
+                                            @if (person.office == "London")
+                                            {
+                                                <MudImage Width=30 Src=@FlagData.Where(x => x.name == "United Kingdom").Select(x => x.image).First() />
+                                            }
+                                            @if (person.office == "Argentina")
+                                            {
+                                                <MudImage Width=30 Src=@FlagData.Where(x => x.name == "Argentina").Select(x => x.image).First() />
+                                            }
+
+                                            <MudText Class="m-3" Typo="Typo.h6">@person.name</MudText>
+                                        </div>
+                                    </CardHeaderContent>
+                                    <CardHeaderActions>
+                                        <MudIconButton Color="Color.Info" Icon="@Icons.Filled.Edit" @onclick="@(() => OnEdit(person))" />
+                                        <MudIconButton Color="Color.Error" Icon="@Icons.Filled.Delete" @onclick="@(() => OnDelete(person))" />
+                                    </CardHeaderActions>
+                                </MudCardHeader>
+                                <MudCardContent Class="pt-0">
+                                    <MudText>
+                                        @person.position
+                                    </MudText>
+
+                                </MudCardContent>
+                            </MudCard>
+                        </MudListItem>
+                    }
+                }
+            }
+
+        </MudList>
+
+    </div>
+</div>
+
+
+
+
+

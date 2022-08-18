@@ -1,0 +1,12 @@
+C:\Users\kswan\source\repos\Contacts\Contacts\Shared\bin\Debug\net6.0\Contacts.Shared.deps.json
+C:\Users\kswan\source\repos\Contacts\Contacts\Shared\bin\Debug\net6.0\Contacts.Shared.dll
+C:\Users\kswan\source\repos\Contacts\Contacts\Shared\bin\Debug\net6.0\Contacts.Shared.pdb
+C:\Users\kswan\source\repos\Contacts\Contacts\Shared\obj\Debug\net6.0\Contacts.Shared.csproj.AssemblyReference.cache
+C:\Users\kswan\source\repos\Contacts\Contacts\Shared\obj\Debug\net6.0\Contacts.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kswan\source\repos\Contacts\Contacts\Shared\obj\Debug\net6.0\Contacts.Shared.AssemblyInfoInputs.cache
+C:\Users\kswan\source\repos\Contacts\Contacts\Shared\obj\Debug\net6.0\Contacts.Shared.AssemblyInfo.cs
+C:\Users\kswan\source\repos\Contacts\Contacts\Shared\obj\Debug\net6.0\Contacts.Shared.csproj.CoreCompileInputs.cache
+C:\Users\kswan\source\repos\Contacts\Contacts\Shared\obj\Debug\net6.0\Contacts.Shared.dll
+C:\Users\kswan\source\repos\Contacts\Contacts\Shared\obj\Debug\net6.0\refint\Contacts.Shared.dll
+C:\Users\kswan\source\repos\Contacts\Contacts\Shared\obj\Debug\net6.0\Contacts.Shared.pdb
+C:\Users\kswan\source\repos\Contacts\Contacts\Shared\obj\Debug\net6.0\ref\Contacts.Shared.dll
