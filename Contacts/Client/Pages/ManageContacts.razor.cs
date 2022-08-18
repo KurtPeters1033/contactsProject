@@ -43,6 +43,7 @@ namespace Contacts.Client.Pages
 
             FlagData = await Http.GetFromJsonAsync<List<Flag>>("flags.json");
 
+            //
 
             OnSortByNameToggled(true);
         }
