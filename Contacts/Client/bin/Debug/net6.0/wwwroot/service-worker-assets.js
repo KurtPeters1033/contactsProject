@@ -893,11 +893,11 @@
       "url": "_framework\/Contacts.Shared.pdb"
     },
     {
-      "hash": "sha256-nwr\/\/IhxfIVCqVprHrMqKosBrf5f1fJ6RkI5cP4zB5g=",
+      "hash": "sha256-bKVFcsQY\/IH7VEDJyNndEVbLQJhmxCuEGmFi7x\/o9FA=",
       "url": "_framework\/Contacts.Client.dll"
     },
     {
-      "hash": "sha256-Q0y89Rrwu7tNGUvAY6diB9Z+9LriGdZB3EWh1OvjXkE=",
+      "hash": "sha256-rXZrm3EzqnOdnoPF\/o8CiY1ai2tYiEILvhesImZ0MOc=",
       "url": "_framework\/Contacts.Client.pdb"
     },
     {
@@ -905,7 +905,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-2uzW6ypb3yQYtqbTDRXlpy4437CPZpmLHvHjFkgG7bw=",
+      "hash": "sha256-xevIy1NhAPzqMSvOwdYNC9PiiNazXcyam97Tn4dPnMI=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -917,5 +917,5 @@
       "url": "_content\/MudBlazor\/MudBlazor.min.js"
     }
   ],
-  "version": "9hsOub7n"
+  "version": "seaE\/l9d"
 };

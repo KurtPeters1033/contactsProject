@@ -202,14 +202,14 @@
       "netstandard.dll": "sha256-HhuK9zDkd1N7hODAEiNJ11VF8T54IgrM6hZfLHmHdqM=",
       "System.Private.CoreLib.dll": "sha256-dXaTqyg1PnXPiSwywpic1PVrd7P8Vb5tN0i0\/urdt3E=",
       "Contacts.Shared.dll": "sha256-yaFI0p0YsOOU\/SgMkRTbv6rohdVZgKU78TaBHuPmIeQ=",
-      "Contacts.Client.dll": "sha256-Y5msBTJMLxvsBDR22OOwewYTDXwXgU+ZZeLPeFl7b6o="
+      "Contacts.Client.dll": "sha256-8aT8O7waCwGaLanRn1Q2UMRWZXlsEHDi\/gwM744JoxY="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "Contacts.Shared.pdb": "sha256-AV0xQ2bcdlTOOOHAa6Y3ngwU\/Xq3sCmmrlwKzxT6c\/Q=",
-      "Contacts.Client.pdb": "sha256-pRYErRIf3XNvfTUdCs\/eNRG7f357UrfPH2wTJTRo9HM="
+      "Contacts.Client.pdb": "sha256-x\/M3E+2IBKrPbfsoPU2y+3+EhUt9JAH+MZfTvy\/+4Mk="
     },
     "runtime": {
       "dotnet.6.0.8.zf2ppcrlxw.js": "sha256-WT60vnXnQtCNURE40qo+XSL1o4iYFvABy0NVaFhm7MI=",
