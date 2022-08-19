@@ -51,3 +51,4 @@ C:\Users\kswan\source\repos\Contacts\Contacts\Server\obj\Debug\net6.0\refint\Con
 C:\Users\kswan\source\repos\Contacts\Contacts\Server\obj\Debug\net6.0\Contacts.Server.pdb
 C:\Users\kswan\source\repos\Contacts\Contacts\Server\obj\Debug\net6.0\Contacts.Server.genruntimeconfig.cache
 C:\Users\kswan\source\repos\Contacts\Contacts\Server\obj\Debug\net6.0\ref\Contacts.Server.dll
+C:\Users\kswan\source\repos\Contacts\Contacts\Server\bin\Debug\net6.0\FluentValidation.dll

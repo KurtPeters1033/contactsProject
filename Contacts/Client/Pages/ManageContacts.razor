@@ -27,7 +27,10 @@
                 </div>
             </div>
         </MudPopover>
-        <ContactPopover IsDetailDialogOpen=@isDetailDialogOpen SelectedContact="@SelectedContact" FlagData="@FlagData" Mode="@contactDetailMode" />
+        @if (isDetailDialogOpen)
+       {
+        <ContactPopover @ref="contactPopoverRef" IsDetailDialogOpen=@isDetailDialogOpen SelectedContact="@SelectedContact" FlagData="@FlagData" Mode="@contactDetailMode" OnSubmitted="@OnSavedContact" OnClosed="@OnClosedContact" />
+       }
     </div>
     <div>
         <MudList Clickable="true" @bind-SelectedValue="selectedValue" @bind-SelectedItem="selectedItem" Color="Color.Primary">

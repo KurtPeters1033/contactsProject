@@ -81,6 +81,10 @@
       "url": "Contacts.Client.styles.css"
     },
     {
+      "hash": "sha256-jj8\/ViR+3ZJgd++HOwo3LEI4ME6sk2MzvITf\/FfsCHk=",
+      "url": "_framework\/FluentValidation.dll"
+    },
+    {
       "hash": "sha256-xQBIin4YpqDObdqwau\/5dr8XQEq54hlxV4gBgNtUqbc=",
       "url": "_framework\/System.Net.Http.Formatting.dll"
     },
@@ -889,11 +893,11 @@
       "url": "_framework\/Contacts.Shared.pdb"
     },
     {
-      "hash": "sha256-nEta5R\/DDmZzA1SJ3DqjA8bq+8190SJaajV5n3C6pO0=",
+      "hash": "sha256-pbhbj\/+8q48Sl2SGfxZOgq\/85r1N8x3EKJiLAbuaovA=",
       "url": "_framework\/Contacts.Client.dll"
     },
     {
-      "hash": "sha256-6goNCeo4xHfc861lRuCgMvdB2l5Io\/Z\/j4IikbQ9cTM=",
+      "hash": "sha256-pAgMb4atqVead9UiP9RrzlCSQkRVjdzJPpr9w90lXCs=",
       "url": "_framework\/Contacts.Client.pdb"
     },
     {
@@ -901,7 +905,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-tHMMyVZ9\/ck5LaZ1Io\/F+3vK3EDYn\/qPU03WoNSkyWQ=",
+      "hash": "sha256-vHUQ8edTDaA3clhnlmCsN4BL6Yd65J8tnt26tx1QY34=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -913,5 +917,5 @@
       "url": "_content\/MudBlazor\/MudBlazor.min.js"
     }
   ],
-  "version": "znhA58Xl"
+  "version": "QA89DAAm"
 };

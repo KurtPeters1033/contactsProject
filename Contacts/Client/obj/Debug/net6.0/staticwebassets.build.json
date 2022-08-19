@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "i6RsrSYXdlT993bqRE4Rgi6cdOoxFoJBfTU7JX5e104=",
+  "Hash": "MJcmAVgQMSXEmTGONW1ygT8drwzJicERf2La+oqojmc=",
   "Source": "Contacts.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -202,6 +202,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\kswan\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.8\\runtimes\\browser-wasm\\native\\dotnet.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\kswan\\source\\repos\\Contacts\\Contacts\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\FluentValidation.dll",
+      "SourceId": "Contacts.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\kswan\\source\\repos\\Contacts\\Contacts\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/FluentValidation.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\kswan\\.nuget\\packages\\fluentvalidation\\11.2.0\\lib\\net6.0\\FluentValidation.dll"
     },
     {
       "Identity": "C:\\Users\\kswan\\source\\repos\\Contacts\\Contacts\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
@@ -6951,6 +6968,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\kswan\\source\\repos\\Contacts\\Contacts\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.WebClient.dll"
+    },
+    {
+      "Identity": "C:\\Users\\kswan\\source\\repos\\Contacts\\Contacts\\Client\\obj\\Debug\\net6.0\\build-gz\\zRtwDvf1.gz",
+      "SourceId": "Contacts.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\kswan\\source\\repos\\Contacts\\Contacts\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/FluentValidation.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\kswan\\source\\repos\\Contacts\\Contacts\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\FluentValidation.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\kswan\\source\\repos\\Contacts\\Contacts\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\FluentValidation.dll"
     },
     {
       "Identity": "C:\\Users\\kswan\\source\\repos\\Contacts\\Contacts\\Client\\obj\\Debug\\net6.0\\build-gz\\zSNDTOaP.gz",

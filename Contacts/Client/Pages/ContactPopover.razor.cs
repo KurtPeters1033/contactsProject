@@ -1,6 +1,8 @@
 ﻿using Contacts.Client.Enums;
 using Contacts.Client.Model;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Forms;
+using MudBlazor;
 using static System.Net.WebRequestMethods;
 
 namespace Contacts.Client.Pages
@@ -19,24 +21,73 @@ namespace Contacts.Client.Pages
         [Parameter]
         public PopoverMode Mode { get; set; }
 
-        private Contact localContact;
+        [Parameter]
+        public EventCallback OnSubmitted { get; set; }
+
+        [Parameter]
+        public EventCallback OnClosed { get; set; }
+
+        public Contact NewContact { get { return SelectedContact; } }
+
+        private bool success = false;
+        private Contact localContact = new Contact();
 
         protected override Task OnParametersSetAsync()
         {
-            localContact = SelectedContact;
+            IsDetailDialogOpen = false;
+
+            if (SelectedContact != null)
+            {
+                localContact = new Contact()
+                {
+                    name = SelectedContact.name,
+                    office = SelectedContact.office,
+                    position = SelectedContact.position,
+                    salary = SelectedContact.salary,
+                    startDate = SelectedContact.startDate,
+                    extn = SelectedContact.extn,
+                };
+            }
+
             return base.OnParametersSetAsync();
         }
 
         private void OnClose()
         {
-            localContact = SelectedContact;
+            if (SelectedContact != null)
+            {
+                localContact = new Contact()
+                {
+                    name = SelectedContact.name,
+                    office = SelectedContact.office,
+                    position = SelectedContact.position,
+                    salary = SelectedContact.salary,
+                    startDate = SelectedContact.startDate,
+                    extn = SelectedContact.extn,
+                };
+            }
+
             IsDetailDialogOpen = false;
+            success = false;
+            OnClosed.InvokeAsync();
         }
 
-        private void OnSave()
+        private void OnValidSubmit(EditContext context)
         {
-            SelectedContact = localContact;
-        }
+            success = true;
 
+            SelectedContact = new Contact()
+            {
+                name = localContact.name,
+                office = localContact.office,
+                position = localContact.position,
+                salary = localContact.salary,
+                startDate = localContact.startDate,
+                extn = localContact.extn,
+            };
+
+            OnSubmitted.InvokeAsync();
+            StateHasChanged();
+        }
     }
 }

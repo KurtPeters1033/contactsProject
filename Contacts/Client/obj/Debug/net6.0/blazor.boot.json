@@ -7,6 +7,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "FluentValidation.dll": "sha256-jj8\/ViR+3ZJgd++HOwo3LEI4ME6sk2MzvITf\/FfsCHk=",
       "System.Net.Http.Formatting.dll": "sha256-xQBIin4YpqDObdqwau\/5dr8XQEq54hlxV4gBgNtUqbc=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-UrVyaila4UaM9NG7wgfD9o+ih1r3xt3rq4W7Z+SCE3w=",
       "Microsoft.AspNetCore.Components.dll": "sha256-8yq2GCAfNZmhru8HZW\/xr9jDHwAS+MD4B1GGQFzi2Pg=",
@@ -201,14 +202,14 @@
       "netstandard.dll": "sha256-HhuK9zDkd1N7hODAEiNJ11VF8T54IgrM6hZfLHmHdqM=",
       "System.Private.CoreLib.dll": "sha256-dXaTqyg1PnXPiSwywpic1PVrd7P8Vb5tN0i0\/urdt3E=",
       "Contacts.Shared.dll": "sha256-yaFI0p0YsOOU\/SgMkRTbv6rohdVZgKU78TaBHuPmIeQ=",
-      "Contacts.Client.dll": "sha256-8TAdQvkYJz7em1JHX6d9l\/I0c5uhh+jiByuiDHW0P4Y="
+      "Contacts.Client.dll": "sha256-wa\/gWM+uP9OlZJGywZdA4lzW\/CzsHw1auSGUuhcALkU="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "Contacts.Shared.pdb": "sha256-AV0xQ2bcdlTOOOHAa6Y3ngwU\/Xq3sCmmrlwKzxT6c\/Q=",
-      "Contacts.Client.pdb": "sha256-wKUMctxf+b1jF5nfDG79OwEmfdVzlOcVLdOqWG\/cE4U="
+      "Contacts.Client.pdb": "sha256-4t8PG6MeWXwhlH8iNx34x2eY+8Nau0gHMEvTwlqLgY8="
     },
     "runtime": {
       "dotnet.6.0.8.zf2ppcrlxw.js": "sha256-WT60vnXnQtCNURE40qo+XSL1o4iYFvABy0NVaFhm7MI=",

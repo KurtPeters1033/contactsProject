@@ -843,3 +843,7 @@ C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\Contacts.C
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\refint\Contacts.Client.dll
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\Contacts.Client.pdb
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\ref\Contacts.Client.dll
+C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\FluentValidation.dll
+C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\FluentValidation.dll.gz
+C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\build-gz\zRtwDvf1.gz

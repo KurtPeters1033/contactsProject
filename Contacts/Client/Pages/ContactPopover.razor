@@ -1,65 +1,78 @@
-﻿<MudOverlay Visible=@IsDetailDialogOpen>
-    <MudPopover Open=@IsDetailDialogOpen AnchorOrigin="Origin.CenterCenter" TransformOrigin="Origin.BottomCenter" Class="px-8">
-        @if (SelectedContact != null)
+﻿<MudOverlay Visible=true>
+    <MudPopover Open=true AnchorOrigin="Origin.CenterCenter" TransformOrigin="Origin.BottomCenter" Class="px-8">
+        @if (localContact != null)
         {
             <h4 class="d-flex justify-content-center m-3">
                 <div class="mr-3">
-                    @if (SelectedContact?.office == "New York" || SelectedContact?.office == "San Francisco")
+                    @if (localContact?.office == "New York" || localContact?.office == "San Francisco")
                     {
                         <MudImage Width=30 Src=@FlagData.Where(x => x.name == "United States").Select(x => x.image).First() />
                     }
-                    @if (SelectedContact?.office == "Tokyo")
+                    @if (localContact?.office == "Tokyo")
                     {
                         <MudImage Width=30 Src=@FlagData.Where(x => x.name == "Japan").Select(x => x.image).First() />
                     }
-                    @if (SelectedContact?.office == "Sydney")
+                    @if (localContact?.office == "Sydney")
                     {
                         <MudImage Width=30 Src=@FlagData.Where(x => x.name == "Australia").Select(x => x.image).First() />
                     }
-                    @if (SelectedContact?.office == "Edinburgh")
+                    @if (localContact?.office == "Edinburgh")
                     {
                         <MudImage Width=30 Src=@FlagData.Where(x => x.name == "Scotland").Select(x => x.image).First() />
                     }
-                    @if (SelectedContact?.office == "London")
+                    @if (localContact?.office == "London")
                     {
                         <MudImage Width=30 Src=@FlagData.Where(x => x.name == "United Kingdom").Select(x => x.image).First() />
                     }
-                    @if (SelectedContact?.office == "Argentina")
+                    @if (localContact?.office == "Argentina")
                     {
                         <MudImage Width=30 Src=@FlagData.Where(x => x.name == "Argentina").Select(x => x.image).First() />
                     }
                 </div>
                 @{
-                    var title = string.IsNullOrEmpty(@SelectedContact?.name) ? "Enter Contact Info" : @SelectedContact?.name;
+                    var title = string.IsNullOrEmpty(@localContact?.name) ? "Enter Contact Info" : @localContact?.name;
                 }
                 @title
             </h4>
-            <div class="d-flex flex-row m-3">
-                @if (Mode != Enums.PopoverMode.Readonly)
+            <EditForm Model="@localContact" OnValidSubmit="@OnValidSubmit">
+                <DataAnnotationsValidator />
+                <div class="d-flex flex-row m-3">
+                    @if (Mode != Enums.PopoverMode.Readonly)
+                    {
+                        <MudTextField For="@(() => localContact.name)" Class="m-2" ReadOnly="@(Mode==Enums.PopoverMode.Readonly)" @bind-Value="@localContact.name" Label="Name" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentIcon="@Icons.Filled.Person" AdornmentColor="Color.Inherit" Margin="Margin.Dense" />
+                    }
+                    <MudTextField For="@(() => localContact.position)" Class="m-2" ReadOnly="@(Mode==Enums.PopoverMode.Readonly)" @bind-Value="@localContact.position" Label="Position" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentIcon="@Icons.Filled.AccountCircle" AdornmentColor="Color.Inherit" Margin="Margin.Dense" />
+                </div>
+                <div class="d-flex flex-row m-3">
+                    <MudTextField For="@(() => localContact.office)" Class="m-2" ReadOnly="@(Mode==Enums.PopoverMode.Readonly)" @bind-Value="@localContact.office" Label="Office" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentIcon="@Icons.Filled.LocationCity" AdornmentColor="Color.Inherit" Margin="Margin.Dense" />
+                    <MudTextField For="@(() => localContact.salary)" Class="m-2" ReadOnly="@(Mode==Enums.PopoverMode.Readonly)" @bind-Value="@localContact.salary" Label="Salary" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.AttachMoney" AdornmentColor="Color.Success" Margin="Margin.Dense" />
+                </div>
+                <div class="d-flex flex-row m-3">
+                    <MudTextField For="@(() => localContact.startDate)" Class="m-2" ReadOnly="@(Mode==Enums.PopoverMode.Readonly)" @bind-Value="@localContact.startDate" Label="Start Date" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.CalendarMonth" AdornmentColor="Color.Inherit" Margin="Margin.Dense" />
+                    <MudTextField For="@(() => localContact.extn)" Class="m-2" ReadOnly="@(Mode==Enums.PopoverMode.Readonly)" @bind-Value="@localContact.extn" Label="Extension" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Phone" AdornmentColor="Color.Inherit" Margin="Margin.Dense" />
+                </div>
+                @if (success)
                 {
-                    <MudTextField Class="m-2" ReadOnly="@(Mode==Enums.PopoverMode.Readonly)" @bind-Value="@SelectedContact.name" Label="Name" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentIcon="@Icons.Filled.Person" AdornmentColor="Color.Inherit" Margin="Margin.Dense" />
+                    <MudText Color="Color.Success">Success</MudText>
                 }
-                <MudTextField Class="m-2" ReadOnly="@(Mode==Enums.PopoverMode.Readonly)" @bind-Value="@SelectedContact.position" Label="Position" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentIcon="@Icons.Filled.AccountCircle" AdornmentColor="Color.Inherit" Margin="Margin.Dense" />
-            </div>
-            <div class="d-flex flex-row m-3">
-                <MudTextField Class="m-2" ReadOnly="@(Mode==Enums.PopoverMode.Readonly)" @bind-Value="@SelectedContact.office" Label="Office" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentIcon="@Icons.Filled.LocationCity" AdornmentColor="Color.Inherit" Margin="Margin.Dense" />
-                <MudTextField Class="m-2" ReadOnly="@(Mode==Enums.PopoverMode.Readonly)" @bind-Value="@SelectedContact.salary" Label="Salary" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.AttachMoney" AdornmentColor="Color.Success" Margin="Margin.Dense" />
-            </div>
-            <div class="d-flex flex-row m-3">
-                <MudTextField Class="m-2" ReadOnly="@(Mode==Enums.PopoverMode.Readonly)" @bind-Value="@SelectedContact.startDate" Label="Start Date" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.CalendarMonth" AdornmentColor="Color.Inherit" Margin="Margin.Dense" />
-                <MudTextField Class="m-2" ReadOnly="@(Mode==Enums.PopoverMode.Readonly)" @bind-Value="@SelectedContact.extn" Label="Extension" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Phone" AdornmentColor="Color.Inherit" Margin="Margin.Dense" />
-            </div>
-            <div class="d-flex justify-content-end m-3">
-                @if (Mode != Enums.PopoverMode.Readonly)
+                else
                 {
-                    <MudButton Variant="Variant.Text" OnClick="@OnSave">
-                        Save
+                    <MudText Color="@Color.Error">
+                        <ValidationSummary />
+                    </MudText>
+                }
+                <div class="d-flex justify-content-end m-3">
+                    @if (Mode != Enums.PopoverMode.Readonly)
+                    {
+                        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Text">
+                            Save
+                        </MudButton>
+                    }
+                    <MudButton ButtonType="ButtonType.Button" Variant="Variant.Text" OnClick="@OnClose">
+                        Close
                     </MudButton>
-                }
-                <MudButton Variant="Variant.Text" OnClick="@OnClose">
-                    Close
-                </MudButton>
-            </div>
+                </div>
+            </EditForm>
         }
     </MudPopover>
 </MudOverlay>

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xL3bgy5X6I6OT7QO3zZn6gfxfY1HbfLlJj5pCgAmEKh+Y/Ovkzv89vA4eYD6xE4pVNup+oEbyw591pxtJDTGaw==",
+  "dgSpecHash": "odXt7ZZdHghDQlpoU0PUUS1/h30sUlG0Op+TQtz89H70NW3Au0Vate9gRTYaG4VAX++zc/oVPHz3lLts9e5UXQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\kswan\\source\\repos\\Contacts\\Contacts\\Server\\Contacts.Server.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\kswan\\.nuget\\packages\\fluentvalidation\\11.2.0\\fluentvalidation.11.2.0.nupkg.sha512",
     "C:\\Users\\kswan\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.9\\microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
     "C:\\Users\\kswan\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.8\\microsoft.aspnetcore.authorization.6.0.8.nupkg.sha512",
     "C:\\Users\\kswan\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.8\\microsoft.aspnetcore.components.6.0.8.nupkg.sha512",

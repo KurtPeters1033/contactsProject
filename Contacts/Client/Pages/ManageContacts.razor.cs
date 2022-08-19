@@ -29,6 +29,7 @@ namespace Contacts.Client.Pages
         private object selectedValue { get; set; }
         private MudListItem selectedItem;
         private MudTextField<string> mudTextFieldRef;
+        private ContactPopover contactPopoverRef;
         private PopoverMode contactDetailMode;
 
         private List<Contact> OriginalContactData { get; set; }
@@ -43,9 +44,40 @@ namespace Contacts.Client.Pages
 
             FlagData = await Http.GetFromJsonAsync<List<Flag>>("flags.json");
 
-            //
-
             OnSortByNameToggled(true);
+        }
+
+        protected void OnSavedContact()
+        {
+            if(contactDetailMode == PopoverMode.Add)
+            {
+                OriginalContactData.Add(contactPopoverRef.NewContact);
+                FilteredContactData = OriginalContactData;
+            }
+            else if(contactDetailMode == PopoverMode.Edit)
+            {
+                
+                var objFiltered = FilteredContactData.FirstOrDefault(x => x.name == SelectedContact.name);
+                var objOrig = OriginalContactData.FirstOrDefault(x => x.name == SelectedContact.name);
+
+                if (objFiltered != null)
+                {
+                    objFiltered.name = contactPopoverRef.NewContact.name;
+                }
+
+                if (objOrig != null)
+                {
+                    objOrig.name = contactPopoverRef.NewContact.name;
+                }
+
+                selectedValue = contactPopoverRef.NewContact;
+
+            }
+        }
+
+        protected void OnClosedContact()
+        {
+            isDetailDialogOpen = false;
         }
 
         private void ToggleOpenFilter()
