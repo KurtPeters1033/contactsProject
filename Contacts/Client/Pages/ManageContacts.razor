@@ -1,11 +1,12 @@
 ﻿@page "/managecontacts"
 @using Contacts.Client.Model;
 
-<h2 class="d-flex justify-content-center" style="font-Family: monospace">Contact Listing</h2>
+<PageTitle>Contact Listing</PageTitle>
 
-<div>
+<div class="overflow-auto h-100 d-flex flex-column justify-content-center">
+    <h2 class="d-flex justify-content-center" style="font-Family: monospace">Contact Listing</h2>
     <div class="d-flex flex-row">
-        <MudButton Class="m-3" Variant="Variant.Filled" StartIcon="@Icons.Filled.PersonAddAlt1" Color="Color.Primary" OnClick="@OnAdd" >Add Contact</MudButton>
+        <MudButton Class="m-3" Style="margin: 4px !important; transform:translateY(3px);" Variant="Variant.Filled" StartIcon="@Icons.Filled.PersonAddAlt1" Color="Color.Primary" OnClick="@OnAdd" >Add Contact</MudButton>
         <MudTextField Style="width: calc(100% + 50px)" @ref="mudTextFieldRef" @bind-Value="searchText" Label="Search" Variant="Variant.Outlined" />
         <MudIconButton Icon="@Icons.Filled.Search" OnClick="@OnSearch"></MudIconButton>
         <MudIconButton Color="Color.Primary" Icon="@Icons.Filled.FilterAlt" OnClick="@ToggleOpenFilter" />
