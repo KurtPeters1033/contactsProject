@@ -1,5 +1,5 @@
-﻿<MudOverlay Visible=true>
-    <MudPopover Open=true AnchorOrigin="Origin.CenterCenter" TransformOrigin="Origin.BottomCenter" Class="px-8">
+﻿<MudOverlay Visible=true DarkBackground >
+    <MudPopover Fixed=false Open=true AnchorOrigin="Origin.BottomCenter" TransformOrigin="Origin.BottomCenter" Class="px-8">
         @if (localContact != null)
         {
             <h4 class="d-flex justify-content-center m-3">
@@ -34,7 +34,7 @@
                 }
                 @title
             </h4>
-            <EditForm Model="@localContact" OnValidSubmit="@OnValidSubmit">
+            <EditForm Model="@localContact" OnValidSubmit="@OnValidSubmit" OnInvalidSubmit="@(() => {success = false;})">
                 <DataAnnotationsValidator />
                 <div class="d-flex flex-row m-3">
                     @if (Mode != Enums.PopoverMode.Readonly)

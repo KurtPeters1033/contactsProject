@@ -1,9 +1,3 @@
-C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\Contacts.Client.csproj.AssemblyReference.cache
-C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\Contacts.Client.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\Contacts.Client.AssemblyInfoInputs.cache
-C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\Contacts.Client.AssemblyInfo.cs
-C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\Contacts.Client.csproj.CoreCompileInputs.cache
-C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\Contacts.Client.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\blazor.boot.json
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\blazor.webassembly.js
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\Contacts.Client.dll
@@ -13,6 +7,7 @@ C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_f
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\dotnet.6.0.8.zf2ppcrlxw.js
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\dotnet.timezones.blat
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\dotnet.wasm
+C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\FluentValidation.dll
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\icudt.dat
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\icudt_CJK.dat
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\icudt_EFIGS.dat
@@ -410,6 +405,7 @@ C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_f
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.Metadata.dll.gz
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Serialization.Formatters.dll.gz
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.WebClient.dll.gz
+C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\FluentValidation.dll.gz
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\System.ComponentModel.dll.gz
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\System.Numerics.dll.gz
@@ -422,6 +418,7 @@ C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\new.json
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\Contacts.Client.staticwebassets.runtime.json
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\Contacts.Client.dll
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\Contacts.Client.pdb
+C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\System.Net.Http.Formatting.dll
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
@@ -624,6 +621,13 @@ C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\icudt_EFIG
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\icudt_no_CJK.dat
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\Contacts.Shared.dll
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\Contacts.Shared.pdb
+C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\Contacts.Client.csproj.AssemblyReference.cache
+C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\Contacts.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\Contacts.Client.AssemblyInfoInputs.cache
+C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\Contacts.Client.AssemblyInfo.cs
+C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\Contacts.Client.csproj.CoreCompileInputs.cache
+C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\Contacts.Client.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\build-gz\zRtwDvf1.gz
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\build-gz\vNGAJVfx.gz
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\build-gz\By1y8ew+.gz
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\build-gz\BIXqxcEh.gz
@@ -843,7 +847,3 @@ C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\Contacts.C
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\refint\Contacts.Client.dll
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\Contacts.Client.pdb
 C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\ref\Contacts.Client.dll
-C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\FluentValidation.dll
-C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\wwwroot\_framework\FluentValidation.dll.gz
-C:\Users\kswan\source\repos\Contacts\Contacts\Client\bin\Debug\net6.0\FluentValidation.dll
-C:\Users\kswan\source\repos\Contacts\Contacts\Client\obj\Debug\net6.0\build-gz\zRtwDvf1.gz

@@ -44,32 +44,35 @@
                                 <MudCardHeader Class="pt-3 pb-0">
                                     <CardHeaderContent>
                                         <div class="d-flex">
-                                            @if (person.office == "New York" || person.office == "San Francisco")
+                                            @if (person != null)
                                             {
-                                                <MudImage Width=30 Src=@FlagData.Where(x => x.name == "United States").Select(x => x.image).First() />
-                                            }
-                                            @if (person.office == "Tokyo")
-                                            {
-                                                <MudImage Width=30 Src=@FlagData.Where(x => x.name == "Japan").Select(x => x.image).First() />
-                                            }
-                                            @if (person.office == "Sydney")
-                                            {
-                                                <MudImage Width=30 Src=@FlagData.Where(x => x.name == "Australia").Select(x => x.image).First() />
-                                            }
-                                            @if (person.office == "Edinburgh")
-                                            {
-                                                <MudImage Width=30 Src=@FlagData.Where(x => x.name == "Scotland").Select(x => x.image).First() />
-                                            }
-                                            @if (person.office == "London")
-                                            {
-                                                <MudImage Width=30 Src=@FlagData.Where(x => x.name == "United Kingdom").Select(x => x.image).First() />
-                                            }
-                                            @if (person.office == "Argentina")
-                                            {
-                                                <MudImage Width=30 Src=@FlagData.Where(x => x.name == "Argentina").Select(x => x.image).First() />
-                                            }
+                                                @if (person.office == "New York" || person.office == "San Francisco")
+                                                {
+                                                    <MudImage Width=30 Src=@FlagData.Where(x => x.name == "United States").Select(x => x.image).First() />
+                                                }
+                                                @if (person.office == "Tokyo")
+                                                {
+                                                    <MudImage Width=30 Src=@FlagData.Where(x => x.name == "Japan").Select(x => x.image).First() />
+                                                }
+                                                @if (person.office == "Sydney")
+                                                {
+                                                    <MudImage Width=30 Src=@FlagData.Where(x => x.name == "Australia").Select(x => x.image).First() />
+                                                }
+                                                @if (person.office == "Edinburgh")
+                                                {
+                                                    <MudImage Width=30 Src=@FlagData.Where(x => x.name == "Scotland").Select(x => x.image).First() />
+                                                }
+                                                @if (person.office == "London")
+                                                {
+                                                    <MudImage Width=30 Src=@FlagData.Where(x => x.name == "United Kingdom").Select(x => x.image).First() />
+                                                }
+                                                @if (person.office == "Argentina")
+                                                {
+                                                    <MudImage Width=30 Src=@FlagData.Where(x => x.name == "Argentina").Select(x => x.image).First() />
+                                                }
 
-                                            <MudText Class="m-3" Typo="Typo.h6">@person.name</MudText>
+                                                <MudText Class="m-3" Typo="Typo.h6">@person.name</MudText>
+                                            }
                                         </div>
                                     </CardHeaderContent>
                                     <CardHeaderActions>

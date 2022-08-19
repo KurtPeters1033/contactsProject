@@ -76,6 +76,9 @@ namespace Contacts.Client.Pages
         {
             success = true;
 
+            if (Mode == PopoverMode.Add)
+                Mode = PopoverMode.Edit;
+
             SelectedContact = new Contact()
             {
                 name = localContact.name,

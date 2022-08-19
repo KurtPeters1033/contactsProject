@@ -51,27 +51,44 @@ namespace Contacts.Client.Pages
         {
             if(contactDetailMode == PopoverMode.Add)
             {
-                OriginalContactData.Add(contactPopoverRef.NewContact);
-                FilteredContactData = OriginalContactData;
+                FilteredContactData.Add(contactPopoverRef.NewContact);
+
+                if (sortByName)
+                    OnSortByNameToggled(true);
+                else if (sortByLocation)
+                    OnSortByLocationToggled(true);
+                else if (sortByPosition)
+                    OnSortByPositionToggled(true);
+
+                selectedValue = contactPopoverRef.NewContact;
+                contactDetailMode = PopoverMode.Edit;
             }
             else if(contactDetailMode == PopoverMode.Edit)
             {
-                
-                var objFiltered = FilteredContactData.FirstOrDefault(x => x.name == SelectedContact.name);
-                var objOrig = OriginalContactData.FirstOrDefault(x => x.name == SelectedContact.name);
-
-                if (objFiltered != null)
+                if (SelectedContact != null)
                 {
-                    objFiltered.name = contactPopoverRef.NewContact.name;
+                    var objFilter = FilteredContactData.FirstOrDefault(x => x.name == SelectedContact.name);
+                    var newContact = contactPopoverRef.NewContact;
+
+                    if (objFilter != null)
+                    {
+                        objFilter.name = contactPopoverRef.NewContact.name;
+                        objFilter.office = contactPopoverRef.NewContact.office;
+                        objFilter.position = contactPopoverRef.NewContact.position;
+                        objFilter.salary = contactPopoverRef.NewContact.salary;
+                        objFilter.startDate = contactPopoverRef.NewContact.startDate;
+                        objFilter.extn = contactPopoverRef.NewContact.extn;
+                    }
+
+                    contactPopoverRef.SelectedContact = newContact;
+
+                    if (sortByName)
+                        OnSortByNameToggled(true);
+                    else if (sortByLocation)
+                        OnSortByLocationToggled(true);
+                    else if (sortByPosition)
+                        OnSortByPositionToggled(true);
                 }
-
-                if (objOrig != null)
-                {
-                    objOrig.name = contactPopoverRef.NewContact.name;
-                }
-
-                selectedValue = contactPopoverRef.NewContact;
-
             }
         }
 
